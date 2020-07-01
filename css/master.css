@@ -22,11 +22,11 @@ body {
   margin-right: 50px;
   font-size: 25px;
 }
-#mainnav li a {
+#mainnav a {
   text-decoration: none;
   color: white;
 }
-#mainnav li a:hover {
+#mainnav a:hover {
   color: red;
   background-color: grey;
 }
