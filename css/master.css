@@ -143,3 +143,11 @@ figure img {
   float: left;
   width: 50%;
 }
+.gallery {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery img {
+  margin: 1rem;
+}
