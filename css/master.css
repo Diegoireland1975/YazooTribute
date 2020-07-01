@@ -2,34 +2,117 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
 body {
   margin: 0;
   padding: 0;
   background-color: yellow;
+  overflow-x: hidden;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 #mainnav {
   text-align: center;
-  margin: 30px 0 50px;
   background-color: grey;
-  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
 }
+
 #mainnav li {
-  display: inline;
-  margin-right: 50px;
+  margin-bottom: 0.5rem;
   font-size: 25px;
+  list-style: none;
 }
+
 #mainnav a {
   text-decoration: none;
   color: white;
 }
+
 #mainnav a:hover {
   color: red;
   background-color: grey;
+}
+
+figure {
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+figure img {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: grey;
+  background-color: black;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#history {
+  margin: -40px 0 50px;
+}
+
+#content,
+.gallery {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#discography {
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+p {
+  line-height: 24px;
+  font-size: 18px;
+}
+
+#album img {
+  padding: 1.5rem;
+}
+
+.gallery {
+  width: 90%;
+}
+
+.gallery img {
+  border: solid grey 5px;
+  padding: 2px;
+  margin: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 #footer {
@@ -37,83 +120,14 @@ body {
   background-color: black;
   margin-top: 20px;
 }
+
 #footer a {
   text-decoration: none;
   font-size: 25px;
   color: red;
 }
-img {
-  width: 50%;
-  padding-left: 10px;
-  padding-bottom: 10px;
-}
-.float {
-  float: right;
-  margin-top: 50px;
-}
-figure {
-  margin-top: 30px;
-  margin-left: 150px;
-}
-figure img {
-  padding: 20px;
-}
-h1 {
-  font-size: 50px;
-  text-align: center;
-  color: grey;
-  background-color: black;
-}
-h2 {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-#history {
-  margin: -40px 0 50px;
-}
-#content {
-  margin-left: 50px;
-}
-#discography {
-  margin-top: 30px;
-}
-h3 {
-  font-size: 20px;
-  color: blue;
-}
-a {
-  text-decoration: none;
-  color: red;
-}
-p {
-  line-height: 24px;
-  font-size: 18px;
-}
-#content img {
-  width: 40%;
-}
-#album img {
-  width: 25%;
-  padding: 40px;
-  margin-left: 150px;
-}
-.gallery {
-  margin-left: 150px;
-  width: 80%;
-}
-.gallery img {
-  width: 25%;
-  border: solid grey 5px;
-  padding: 2px;
-  margin: 20px;
-  transition: all 0.4s ease-in-out;
-}
-.gallery img:hover {
-  transform: scale(1.1);
-  transition: 1s;
-}
-@media only screen and (max-device-width: 700px) {
+
+/* @media only screen and (max-device-width: 700px) {
   .float {
     width: 120%;
     float: left;
@@ -154,4 +168,4 @@ p {
   #footer {
     width: 180%;
   }
-}
+} */
