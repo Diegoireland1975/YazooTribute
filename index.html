@@ -64,6 +64,20 @@
               <a href="#top">Back to the top</a>
 							</div>
 		<script src="Js/jquery-3.2.1.js"></script>
-		<script src="Js/jquery.fancybox.min.js"></script>									
+		<script src="Js/jquery.fancybox.min.js"></script>
+		<script>
+				$("[data-fancybox]").fancybox({
+        loop: true,
+        buttons: [
+          "zoom",
+          "slideShow",
+          "fullScreen",
+          "thumbs",
+          "close",
+        ],
+        transitionEffect: "slide",
+        transitionDuration: 2000,
+      });
+		</script>								
   </body>
 </html>
