@@ -138,3 +138,8 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 } */
+
+figure img {
+  float: left;
+  width: 50%;
+}
