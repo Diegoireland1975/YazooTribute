@@ -63,8 +63,7 @@ h1 {
   text-align: center;
   color: grey;
   background-color: black;
-  margin-top: auto;
-  margin-bottom: 0;
+  margin: auto 0;
 }
 
 h2 {
