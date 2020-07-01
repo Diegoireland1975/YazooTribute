@@ -81,11 +81,6 @@ h3 {
   color: blue;
 }
 
-a {
-  text-decoration: none;
-  color: red;
-}
-
 p {
   line-height: 24px;
   font-size: 18px;
@@ -96,11 +91,13 @@ p {
 }
 
 .gallery {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gallery img {
-  padding: 1rem;
+  padding: 1rem 0;
   transition: all 0.4s ease-in-out;
 }
 
