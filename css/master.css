@@ -129,15 +129,13 @@ p {
     flex-direction: row;
     justify-content: space-around;
   }
-
+  .main-img {
+    margin: 0 auto;
+  }
   h1 {
     font-size: 3.5rem;
   }
 }
-/* #content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-} */
 
 figure img {
   float: left;
