@@ -129,6 +129,7 @@ p {
   text-align: center;
   background-color: black;
   margin-top: 20px;
+  padding: 1rem 0;
 }
 
 #footer a {
