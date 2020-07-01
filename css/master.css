@@ -142,7 +142,8 @@ p {
   #mainnav {
     text-align: left;
     background-color: grey;
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
   }
   #content {
     width: 120%;
