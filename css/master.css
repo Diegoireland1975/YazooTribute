@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -14,6 +16,7 @@ body {
   padding: 0;
   background-color: yellow;
   overflow-x: hidden;
+  font-family: "Share Tech", sans-serif;
 }
 
 img {
@@ -70,6 +73,7 @@ h2 {
 #content {
   margin: 0 auto;
   padding: 0 1rem;
+  display: block;
 }
 
 #discography {
@@ -121,6 +125,10 @@ p {
 @media (min-width: 768px) {
   #main-nav {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
+/* #content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+} */
