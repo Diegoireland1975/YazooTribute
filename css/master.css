@@ -124,28 +124,36 @@ p {
   color: red;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #main-nav {
     flex-direction: row;
     justify-content: space-around;
   }
+
   .main-img {
     margin: 0 auto;
   }
+
   h1 {
     font-size: 3.5rem;
   }
-}
-
-figure img {
-  float: left;
-  width: 50%;
-}
-.gallery {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.gallery img {
-  margin: 1rem;
+  figure img {
+    float: left;
+    width: 50%;
+  }
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery img {
+    margin: 1rem;
+  }
+  #album {
+    display: flex;
+    justify-content: center;
+  }
+  #album img {
+    width: 25%;
+  }
 }
