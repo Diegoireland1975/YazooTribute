@@ -67,8 +67,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-#content,
-.gallery {
+#content {
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -97,13 +96,11 @@ p {
 }
 
 .gallery {
-  width: 90%;
+  margin: 0 auto;
 }
 
 .gallery img {
-  border: solid grey 5px;
-  padding: 2px;
-  margin: 20px;
+  padding: 1rem;
   transition: all 0.4s ease-in-out;
 }
 
