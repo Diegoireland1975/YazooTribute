@@ -47,8 +47,7 @@ img {
 }
 
 #main-nav a:hover {
-  color: #000;
-  background-color: grey;
+  color: yellow;
 }
 
 figure {
