@@ -1,157 +1,155 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-body{
-	margin:0;
-	background-color: yellow;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
 }
-#mainnav{
-	text-align: center;
-	margin: 30px 0 50px;
-	background-color: grey;
+#mainnav {
+  text-align: center;
+  margin: 30px 0 50px;
+  background-color: grey;
 }
-#mainnav li{
-	display: inline;
-	margin-right: 50px;
-	font-size: 25px;
-
+#mainnav li {
+  display: inline;
+  margin-right: 50px;
+  font-size: 25px;
 }
-#mainnav li a{
-	text-decoration: none;
-	color:white;
+#mainnav li a {
+  text-decoration: none;
+  color: white;
 }
 #mainnav li a:hover {
-	color:red;
-	background-color: grey;
+  color: red;
+  background-color: grey;
 }
 
-#footer{
-	text-align: center;
-	background-color: black;
-	margin-top: 20px;
+#footer {
+  text-align: center;
+  background-color: black;
+  margin-top: 20px;
 }
-#footer a{
-	text-decoration: none;
-	font-size:25px;
-	color:red;
-
+#footer a {
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
 }
-img{
-	width: 50%;
-	padding-left:10px;
-	padding-bottom: 10px;
+img {
+  width: 50%;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
-.float{
-	float:right;
-	margin-top: 50px;
+.float {
+  float: right;
+  margin-top: 50px;
 }
-figure{
-
-	margin-top: 30px;
-	margin-left: 150px;
+figure {
+  margin-top: 30px;
+  margin-left: 150px;
 }
-figure img{
-	padding: 20px;
-
+figure img {
+  padding: 20px;
 }
-h1{
-	font-size: 50px;
-	text-align: center;
-	color:grey;
-	background-color: black;
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: grey;
+  background-color: black;
 }
 h2 {
-	font-size: 30px;
-	text-align: center;
-	margin-bottom:30px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 #history {
-	margin:-40px 0 50px;
+  margin: -40px 0 50px;
 }
-#content{
-margin-left:50px;
+#content {
+  margin-left: 50px;
 }
 #discography {
-margin-top: 30px;
+  margin-top: 30px;
 }
-h3{
-	font-size: 20px;
-	color:blue;
+h3 {
+  font-size: 20px;
+  color: blue;
 }
 a {
-	text-decoration: none;
-	color:red;
+  text-decoration: none;
+  color: red;
 }
-p{
-	line-height: 24px;
-	font-size: 18px;
+p {
+  line-height: 24px;
+  font-size: 18px;
 }
-#content img{
-	width: 40%;
+#content img {
+  width: 40%;
 }
-#album img{
-	width: 25%;
-	padding: 40px;
-	margin-left: 150px;
+#album img {
+  width: 25%;
+  padding: 40px;
+  margin-left: 150px;
 }
-.gallery{
-	margin-left: 150px;
-	width: 80%;
+.gallery {
+  margin-left: 150px;
+  width: 80%;
 }
-.gallery img{
-	width: 25%;
-	border:solid grey 5px;
-	padding: 2px;
-	margin:20px;
-	transition: all .4s ease-in-out;
+.gallery img {
+  width: 25%;
+  border: solid grey 5px;
+  padding: 2px;
+  margin: 20px;
+  transition: all 0.4s ease-in-out;
 }
-.gallery img:hover{
-	transform:scale(1.1);
-	transition: 1s;
-
-	}
-@media only screen and (max-device-width : 700px) {
-.float{
-	width:120%;
-	float:left;
-	margin-left:40px;
-	margin-bottom: 30px;
+.gallery img:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
-#album img{
-	width: 100%;
-	margin-left: 10px;
-	float:left;
-}
-figure img{
-	padding: 10px;
-}
-figure{
-	width: 140%;
-	margin-left: -50px;
-}
-.gallery{
-	margin-left: 40px;
-	width: 140%;
-}
-.gallery img{
-	width: 100%;
-}
-#mainnav{
-	text-align: left;
-	background-color: grey;
-	display:inline-flex;
-}
-#content{
-	width: 120%;
-}
-#header{
-	width: 180%;
-}
-#footer{
-	width: 180%;
-}
-
+@media only screen and (max-device-width: 700px) {
+  .float {
+    width: 120%;
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 30px;
+  }
+  #album img {
+    width: 100%;
+    margin-left: 10px;
+    float: left;
+  }
+  figure img {
+    padding: 10px;
+  }
+  figure {
+    width: 140%;
+    margin-left: -50px;
+  }
+  .gallery {
+    margin-left: 40px;
+    width: 140%;
+  }
+  .gallery img {
+    width: 100%;
+  }
+  #mainnav {
+    text-align: left;
+    background-color: grey;
+    display: inline-flex;
+  }
+  #content {
+    width: 120%;
+  }
+  #header {
+    width: 180%;
+  }
+  #footer {
+    width: 180%;
+  }
 }
