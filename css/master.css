@@ -170,7 +170,7 @@ p {
     background-image: url(../images/yazoo-chasing-the-dragons.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-    background-position: -250px -120px;
+    background-position: -150px -80px;
   }
   #album img {
     width: 50%;
@@ -179,5 +179,11 @@ p {
   }
   #album img:hover {
     transform: translate(5px, -5px);
+  }
+}
+
+@media (min-width: 1024px) {
+  #album {
+    background-position: -250px -150px;
   }
 }
