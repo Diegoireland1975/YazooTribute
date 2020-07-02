@@ -166,9 +166,18 @@ p {
   #album {
     display: flex;
     justify-content: center;
+    background-color: rgb(243, 229, 26);
+    background-image: url(../images/yazoo-chasing-the-dragons.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: -250px -120px;
   }
   #album img {
-    width: 60%;
+    width: 50%;
     margin: auto;
+    transition: translate, 0.5s ease-in-out;
+  }
+  #album img:hover {
+    transform: translate(5px, -5px);
   }
 }
