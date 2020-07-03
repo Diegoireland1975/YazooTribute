@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
-
+:root {
+  --primary-color: #ccc;
+  --secondary-color: rgb(243, 229, 26);
+}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -14,7 +17,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: yellow;
+  background-color: var(--primary-color);
   overflow-x: hidden;
   font-family: "Share Tech", sans-serif;
 }
@@ -36,12 +39,14 @@ a {
 .main-img {
   margin-top: -1rem;
 }
-
+header,
 #main-nav {
-  text-align: center;
-  background-color: grey;
   display: flex;
   flex-direction: column;
+}
+#main-nav {
+  text-align: center;
+  background-color: #333;
   align-items: flex-start;
   margin-top: auto;
   margin-bottom: auto;
@@ -61,7 +66,7 @@ a {
 }
 
 #main-nav a:hover {
-  color: yellow;
+  color: var(--secondary-color);
 }
 
 figure {
@@ -75,7 +80,7 @@ figure img {
 h1 {
   font-size: 2.5rem;
   text-align: center;
-  color: grey;
+  color: var(--secondary-color);
   background-color: black;
   margin: auto 0;
 }
@@ -135,9 +140,9 @@ p {
 #footer a {
   text-decoration: none;
   font-size: 25px;
-  color: red;
+  color: var(--secondary-color);
 }
-
+/* Smartphone and Tablet */
 @media screen and (min-width: 768px) {
   #main-nav {
     flex-direction: row;
@@ -155,33 +160,39 @@ p {
     float: left;
     width: 50%;
   }
+
   .gallery {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .gallery img {
     margin: 1rem;
   }
+
   #album {
     display: flex;
     justify-content: center;
-    background-color: rgb(243, 229, 26);
+    background-color: var(--secondary-color);
     background-image: url(../images/yazoo-chasing-the-dragons.jpg);
     background-blend-mode: multiply;
     background-size: cover;
     background-position: -150px -80px;
   }
+
   #album img {
     width: 50%;
     margin: auto;
     transition: translate, 0.5s ease-in-out;
   }
+
   #album img:hover {
     transform: translate(5px, -5px);
   }
 }
 
+/* Desktop */
 @media (min-width: 1024px) {
   #album {
     background-position: -250px -150px;
