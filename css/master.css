@@ -119,16 +119,25 @@ p {
   flex-direction: column;
   align-items: center;
 }
-
 .gallery img {
-  padding: 1rem 0;
-  transition: scale, brigthness, 0.5s ease-in-out;
+  transition: scale, opacity, 0.5s ease-in-out;
+  border: 5px solid #fff;
+}
+
+.gallery:hover img {
+  opacity: 0.6;
+  transform: scale(0.92);
 }
 
 .gallery img:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* .gallery img:hover {
   transform: scale(1.1);
   filter: brightness(50%);
-}
+}  */
 
 #footer {
   text-align: center;
