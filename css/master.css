@@ -39,6 +39,8 @@ a {
 .main-img {
   margin-top: -1rem;
 }
+
+/* NAV */
 header,
 #main-nav {
   display: flex;
@@ -114,6 +116,7 @@ p {
   padding: 1.5rem;
 }
 
+/* Gallery */
 .gallery {
   display: flex;
   flex-direction: column;
@@ -134,11 +137,7 @@ p {
   transform: scale(1);
 }
 
-/* .gallery img:hover {
-  transform: scale(1.1);
-  filter: brightness(50%);
-}  */
-
+/* Footer */
 #footer {
   text-align: center;
   background-color: black;
@@ -193,11 +192,12 @@ p {
   #album img {
     width: 50%;
     margin: auto;
-    transition: translate, 0.5s ease-in-out;
+    transition: translate, brightness, 0.5s ease-in-out;
   }
 
   #album img:hover {
     transform: translate(5px, -5px);
+    filter: brightness(85%);
   }
 }
 
@@ -205,5 +205,14 @@ p {
 @media (min-width: 1024px) {
   #album {
     background-position: -250px -150px;
+  }
+}
+
+/* Larger Screen */
+@media (min-width: 1440px) {
+  .container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
   }
 }
