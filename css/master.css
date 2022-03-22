@@ -28,7 +28,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -37,7 +37,7 @@ a {
 }
 
 .main-img {
-  margin-top: -1rem;
+  height: auto;
 }
 
 /* NAV */
